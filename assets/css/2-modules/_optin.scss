@@ -1,0 +1,57 @@
+.form-group {
+    h4 { color: rgba(196, 186, 173, 1); }
+
+    .form-text {
+        color: $base-color-light;
+        font-size: 14px;
+    }
+
+    .form-input-bg {
+        background-color: rgba(9, 56, 72, 1);
+        display: flex;
+        align-items: center;
+
+        .form-control {
+            background-color: rgba(9, 56, 72, 1);
+            border: none;
+            margin-left: 9%;
+            font-size: 0.9rem;
+
+            &::-webkit-input-placeholder,
+            &::-moz-placeholder,
+            &:-ms-input-placeholder,
+            &:-moz-placeholder {
+                color: rgba(119, 140, 148, 1);
+            }
+
+            &:focus {
+                background-color: rgba(9, 56, 72, 1);
+                color: $base-color-light;
+                border-color: transparent;
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            right: 2.5%;
+            transform: translateY(-50%);
+            display: inline-block;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: none;
+            padding: 0px;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0px;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+    }
+}

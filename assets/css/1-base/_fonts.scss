@@ -1,0 +1,61 @@
+@mixin fontFace($family,$style,$weight,$display,$src) {
+    @font-face {
+        font-family: $family;
+        font-style: $style;
+        font-weight: $weight;
+        font-display: $display;
+        src: url('#{$src}.woff2') format('woff2'), // standards
+            url('#{$src}.woff') format('woff'); // standards
+    }
+}
+
+/* open-sans-regular - latin */
+@include fontFace('Open Sans', normal, 400, swap, '../fonts/open-sans-v17-latin-regular');
+
+/* open-sans-700 - latin */
+@include fontFace('Open Sans', normal, 700, swap, '../fonts/open-sans-v17-latin-700');
+
+/* playfair-display-regular - latin */
+@include fontFace('Playfair Display', normal, 400, swap, '../fonts/playfair-display-v15-latin-regular');
+
+
+// Fonts
+$base-font: 'Open Sans', sans-serif;
+$base-font-lineheight: 1.75;
+$title-font: 'Playfair Display', serif;
+
+// Titles
+h1, h2, h3, h4, h5 {
+	font-family: $title-font;
+	letter-spacing: 1px;
+}
+
+// Links
+a.disable-decor {
+	&:hover { text-decoration: none; }
+}
+a.white-decor {
+    &:hover { color: $base-color-light; } 
+}
+a.font-midnight { color: $base-color-dark; }
+a.tan-text { color: rgba(209, 201, 191, 1); }
+
+// All Caps
+.caps { text-transform: uppercase; }
+
+// Font sizes
+.font-11 { font-size: 11px; }
+.font-12 { font-size: 12px; }
+.font-13 { font-size: 13px; }
+
+// Character spacer
+.font-spacer { letter-spacing: 1.4px; }
+
+// Specified font colors
+.font-midnight { color: $base-color-dark; }
+.white-text { color: $base-color-light; }
+.tan-text { color: rgba(209, 201, 191, 1); }
+.light-blue-text { color: rgba(84, 154, 189, 1); }
+.coral-text { color: rgba(242, 102, 87, 1); }
+.horizon-text { color: rgba(94, 135, 145, 1); }
+.lighten { opacity: 0.5; }

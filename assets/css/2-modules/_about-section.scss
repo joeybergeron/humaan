@@ -1,0 +1,92 @@
+// Information carousel content
+.wave-bg-texture {
+    background: rgba(2, 61, 83, 1) url(../img/waves.png) repeat-x top left;
+}
+
+.section-about-us {
+	background-color: rgba(2, 66, 91, 1);
+	color: $base-color-light;
+	padding: 10%;
+	margin-top: -9%;
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-end;
+    
+    h3 {
+        margin-bottom: 1.25em;
+    }
+}
+
+.overlap-mrg {
+    margin-top: -12%;
+    
+    .section-our-investments {
+        background-color: rgba(242, 102, 87, 1);
+        color: $base-color-light;
+        padding: 16% 20%;
+        margin-top: -5%;
+    }
+
+    .section-our-services {
+        background-color: rgba(84, 154, 189, 1);
+        color: $base-color-light;
+        padding: 16% 20%;
+    }
+
+    @media only screen and (max-width: 991px) {
+        margin-top: 0px;
+    }
+}
+
+.box-shadow {
+	box-shadow: 0rem 0.5rem 6rem rgba(0, 0, 0, 0.15);
+}
+
+// Information carousel buttons
+.pill-btn {
+	display: inline-block;
+	background-color: $base-color-light;
+	border-radius: 30px;
+	color: rgba(2, 61, 83, 1);
+	font-weight: bold;
+	padding: 3.5% 8.5%;
+}
+.pill-btn:hover {
+	transform: translateY(-1px);
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+	color: rgba(2, 61, 83, 1);
+}
+
+
+// Information carousel
+.latest-info-btn {
+	color: rgba(209, 201, 191, 1);
+    text-decoration: none;
+    
+    &:hover {
+	    color: rgba(209, 201, 191, 1);
+        text-decoration: underline;
+
+        @media only screen and (max-width: 575px) {
+            transform: translateY(-1px);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+            color: rgba(2, 61, 83, 1);
+            text-decoration: none;
+        }
+    }
+
+    i {
+        color: rgba(94, 135, 145, 1);
+    }
+
+    @media only screen and (max-width: 991px) {
+        margin-top: 2%;
+    }
+
+    @media only screen and (max-width: 575px) {
+        background-color: rgba(231,225,217,1);
+        margin-top: 2%;
+        padding: 2%;
+        color: rgba(2, 61, 83, 1);
+    }
+}

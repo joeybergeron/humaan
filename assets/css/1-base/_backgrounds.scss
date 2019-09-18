@@ -1,0 +1,28 @@
+.white-bg {
+	background-color: $base-color-light;
+}
+.elephant-bg {
+	background-color: rgba(8, 53, 68, 1);
+}
+.teal-bg {
+	background-color: rgba(2, 61, 83, 1);
+    color: rgba(123, 166, 183, 1);
+    
+    footer strong { color: $base-color-light; }
+
+    hr { border-top-color: rgba(123, 166, 183, 0.2); }
+}
+
+.spring-wood-bg {
+	background: $base-color-light;
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,225,217,1) 50%);
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,225,217,1) 50%);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(231,225,217,1) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e7e1d9",GradientType=1);
+    
+    @media only screen and (max-width: 991px) {
+        background: -moz-linear-gradient(90deg, rgba(231,225,217,1) 50%, rgba(231,225,217,1) 50%);
+        background: -webkit-linear-gradient(90deg, rgba(231,225,217,1) 50%, rgba(231,225,217,1) 50%);
+        background: linear-gradient(90deg, rgba(231,225,217,1) 50%, rgba(231,225,217,1) 50%);
+    }
+}

@@ -1,0 +1,33 @@
+.article-section {
+	position: relative;
+    min-height: 340px;
+    
+    .article-section--item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5%;
+        cursor: pointer;
+
+        h5 {
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        &:before {
+            content: '';
+            border-top: 3px solid rgba(2, 66, 91, 1);
+            width: 100%;
+            max-width: 10%;
+            transition: max-width 0.3s ease-in-out;
+        }
+        &:hover:before {
+            max-width: 100%;
+        }
+
+        &.active {
+            background-color: rgba(243, 240, 236, 1);
+        }
+    }
+}
+
